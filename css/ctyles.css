@@ -479,9 +479,14 @@ background-color: var(--primary-bg-color);
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 0;
+  cursor: pointer;
+  transition: fill var(--transition-dur-and-func);
+}
+.modal-close-btn:hover {
+  fill: var(--primary-accent-color);
 }
 .contact-form{
   width: 500px;
@@ -788,7 +793,7 @@ background-color: var(--primary-bg-color);
   }
 
   .modal-form-field {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       font-weight: 400;
       font-size: 12px;
@@ -827,6 +832,7 @@ background-color: var(--primary-bg-color);
       width: 100%;
       height: 120px;
       margin-top: 4px;
+      margin-bottom: 10px;
       padding: 12px 16px;
       resize: none;
       border: 1px solid rgba(33, 33, 33, 0.2);
